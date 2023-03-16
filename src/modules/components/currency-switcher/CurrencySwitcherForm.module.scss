@@ -1,0 +1,14 @@
+@import "../../styles/css-variables/colors";
+
+.currency-switcher {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: $contour;
+  }
+}
