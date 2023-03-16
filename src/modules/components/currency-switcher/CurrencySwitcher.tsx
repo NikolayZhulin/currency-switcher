@@ -33,14 +33,14 @@ export const CurrencySwitcher = () => {
         />
       </FormField>
       <FormField fieldName={'One NFT price'}>
-        <FieldValueSpan value={formatPrice(oneNFTPrice)} />
+        <FieldValueSpan value={formatPrice(oneNFTPrice, selectedCurrency)} />
       </FormField>
       <FormField fieldName={'Quantity'}>
         <ItemCounter itemCount={currencyCount} setItemCount={setCurrencyCount} />
       </FormField>
       <span className={s['currency-switcher__separator']}></span>
       <FormField fieldName={'Total price'}>
-        <FieldValueSpan value={formatPrice(totalPrice)} primary />
+        <FieldValueSpan value={formatPrice(totalPrice, selectedCurrency)} primary />
       </FormField>
       <SubmitButton title="mint now" onSubmit={() => {}} />
       <FormInfo>All NFTs will reveal ind will be available for sale after Mint Stage</FormInfo>

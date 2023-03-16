@@ -1,11 +1,11 @@
-@import "css-variables/fonts";
-@import "css-variables/colors";
+@import "styles/css-variables/fonts";
+@import "styles/css-variables/colors";
 
 body {
   margin: 0;
   font-family: $InterRegular;
   background: $mainBackground;
-  color: $secondary
+  color: $secondary;
 }
 
 @font-face {

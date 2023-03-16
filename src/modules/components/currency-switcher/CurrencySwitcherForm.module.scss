@@ -1,5 +1,5 @@
-@import "../../../css-variables/colors";
-@import "../../../css-variables/fonts";
+@import "../../../styles/css-variables/colors";
+@import "../../../styles/css-variables/fonts";
 
 .currency-switcher {
   display: flex;
@@ -10,6 +10,6 @@
   &__separator {
     width: 100%;
     height: 1px;
-    background-color: $contour;
+    background-color: $border;
   }
 }

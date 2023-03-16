@@ -1,5 +1,5 @@
-@import "../../../css-variables/colors";
-@import "../../../css-variables/fonts";
+@import "../../../styles/css-variables/colors";
+@import "../../../styles/css-variables/fonts";
 
 .counter {
   display: flex;
@@ -13,9 +13,8 @@
     justify-content: center;
     align-items: center;
     color: $secondary;
-    font-weight: bolder;
     background: $background;
-    border: 1px solid $contour;
+    border: 1px solid $border;
     border-radius: 4px;
 
     &_plus {

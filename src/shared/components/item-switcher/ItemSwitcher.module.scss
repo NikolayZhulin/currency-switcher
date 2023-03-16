@@ -1,3 +1,5 @@
+@import "../../../styles/css-variables/colors";
+
 .switcher-container {
   padding: 2px;
   border: 1px solid rgba(255, 102, 196, 0.4);
@@ -9,12 +11,12 @@
     box-sizing: border-box;
     border: none;
     border-radius: 4px;
-    background: #1653A5;
-    color: #fff;
+    background: $background;
+    color: $secondary;
     cursor: pointer;
 
     &_active {
-      background: #FF66C4;
+      background: $primary;
     }
   }
 }

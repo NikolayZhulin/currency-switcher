@@ -1,4 +1,5 @@
-@import "../../../css-variables/fonts";
+@import "../../../styles/css-variables/fonts";
+@import "../../../styles/css-variables/colors";
 
 .form-description {
   width: 80%;
@@ -8,5 +9,5 @@
   font-size: $small;
   font-weight: 500;
   line-height: 18px;
-  color: #5A8CCF;
+  color: $description;
 }
