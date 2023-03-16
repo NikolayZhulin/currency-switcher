@@ -2,12 +2,12 @@ import { FieldValueSpan } from '../form-value-span'
 
 import s from './CounterContainer.module.scss'
 
-type CurrencyCounterProps = {
+type ItemCounterProps = {
   setItemCount: (count: number) => void
   itemCount: number
 }
 
-export const CurrencyCounter = ({ setItemCount, itemCount }: CurrencyCounterProps) => {
+export const ItemCounter = ({ setItemCount, itemCount }: ItemCounterProps) => {
   const increaseCount = () => {
     setItemCount(itemCount + 1)
   }

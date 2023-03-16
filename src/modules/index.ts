@@ -1,1 +1,1 @@
-export { CurrencySwitcherForm } from './CurrencySwitcherForm'
+export { CurrencySwitchForm } from './components'

@@ -1,19 +1,18 @@
 import {
-  CurrencyCounter,
+  FieldValueSpan,
   FormField,
   FormInfo,
+  ItemCounter,
   ItemSwitcher,
-  FieldValueSpan,
+  SubmitButton,
 } from '../../../shared/components'
-import { FormContainer } from '../../../shared/components/form-container'
-import { SubmitButton } from '../../../shared/components/submit-button'
 import { formatPrice } from '../../../utils'
 import { Currency } from '../../enums'
 import { useSwitcherForm } from '../../hooks/use-switcher-form'
 
 import s from './CurrencySwitcherForm.module.scss'
 
-export const CurrencySwitcherForm = () => {
+export const CurrencySwitcher = () => {
   const {
     currencies,
     changeSelectedCurrency,
@@ -37,7 +36,7 @@ export const CurrencySwitcherForm = () => {
         <FieldValueSpan value={formatPrice(oneNFTPrice)} />
       </FormField>
       <FormField fieldName={'Quantity'}>
-        <CurrencyCounter itemCount={currencyCount} setItemCount={setCurrencyCount} />
+        <ItemCounter itemCount={currencyCount} setItemCount={setCurrencyCount} />
       </FormField>
       <span className={s['currency-switcher__separator']}></span>
       <FormField fieldName={'Total price'}>

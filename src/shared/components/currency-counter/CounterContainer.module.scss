@@ -1,0 +1,49 @@
+@import "../../../css-variables/colors";
+@import "../../../css-variables/fonts";
+
+.counter {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary;
+    font-weight: bolder;
+    background: $background;
+    border: 1px solid $contour;
+    border-radius: 4px;
+
+    &_plus {
+      &:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 8px;
+        background: $secondary;
+      }
+    }
+
+    &_minus, &_plus {
+      &:before {
+        content: '';
+        width: 8px;
+        height: 2px;
+        background: $secondary;
+      }
+    }
+  }
+
+  &__count {
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: $InterMedium;
+    font-size: $big;
+    line-height: 36px;
+  }
+}

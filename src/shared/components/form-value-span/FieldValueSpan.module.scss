@@ -1,0 +1,11 @@
+@import "../../../css-variables/fonts";
+@import "../../../css-variables/colors";
+
+.field-value-span {
+  font-size: $big;
+  line-height: 36px;
+
+  &_primary {
+    color: $primary
+  }
+}

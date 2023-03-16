@@ -1,5 +1,6 @@
-import { CurrencySwitchForm } from './modules'
-import s from './styles/App.module.scss'
+import { CurrencySwitchForm } from '../modules'
+
+import s from './App.module.scss'
 
 function App() {
   return (

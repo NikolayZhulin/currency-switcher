@@ -1,0 +1,25 @@
+@import "src/css-variables/fonts";
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    margin-bottom: 8px;
+    font-size: $small;
+    line-height: 20px;
+  }
+
+  .form-container {
+    width: 339px;
+    height: 425px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: #1653A5;
+  }
+}
+

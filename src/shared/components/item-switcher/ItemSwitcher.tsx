@@ -1,31 +1,27 @@
-import { CurrencyType } from '../../types'
-
 import s from './ItemSwitcher.module.scss'
 
-type CurrencySwitcherProps = {
-  itemList: CurrencyType[]
-  setSelectedItem: (currencyName: string) => void
-  selectedItem: string
+type ItemSwitcherProps<T> = {
+  items: { label: string; value: T }[]
+  onSelectedItemChange: (value: T) => void
+  selectedItem: T
 }
 
-export const ItemSwitcher = ({
-  itemList,
-  setSelectedItem,
+export const ItemSwitcher = <T,>({
+  items,
+  onSelectedItemChange,
   selectedItem,
-}: CurrencySwitcherProps) => {
+}: ItemSwitcherProps<T>) => {
   return (
     <div className={s['switcher-container']}>
-      {itemList.map(item => (
+      {items.map(item => (
         <button
-          key={item.name}
-          className={
-            selectedItem === item.name
-              ? `${s['switcher-container__button']} ${s['switcher-container__button_active']}`
-              : s['switcher-container__button']
-          }
-          onClick={() => setSelectedItem(item.name)}
+          key={item.label}
+          className={`${s['switcher-container__button']} ${
+            selectedItem === item.value ? s['switcher-container__button_active'] : ''
+          }`}
+          onClick={() => onSelectedItemChange(item.value)}
         >
-          {item.name}
+          {item.label}
         </button>
       ))}
     </div>
